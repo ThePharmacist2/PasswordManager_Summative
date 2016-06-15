@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.dbrinkman.passwordmanager.Credits"
+    android:background="#7d92ef">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This app was made for Mr.Buskell&apos;s Coding for Digital Media course. The sole owner of this app is David Brinkman from Sisler High School. Special Thanks to Mr.Buskell and Mr.Hardman who helped out whenever I had trouble with something."
+        android:id="@+id/txtvwCredits"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rtingbrAppRating"
+        android:layout_below="@+id/txtvwCredits"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:onClick="Rating" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtvwRating"
+        android:layout_below="@+id/rtingbrAppRating"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Password"
+        android:id="@+id/btnAddPassword2"
+        android:layout_below="@+id/txtvwRating"
+        android:layout_alignLeft="@+id/rtingbrAppRating"
+        android:layout_alignStart="@+id/rtingbrAppRating"
+        android:onClick="GoAddPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Passwords"
+        android:layout_below="@+id/txtvwRating"
+        android:layout_toRightOf="@+id/btnAddPassword2"
+        android:layout_toEndOf="@+id/btnAddPassword2"
+        android:id="@+id/btnViewPasswords2"
+        android:onClick="ViewPasswords" />
+</RelativeLayout>
