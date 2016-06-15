@@ -84,7 +84,7 @@ public class AddPassworda extends AppCompatActivity {
 
                 pplsPasswordDb.insertElement(db2, cntntVals);
                 publishProgress("Password has been added.");
-                Log.i("Status update", "Shit ran");
+                Log.i("Status update", "Stuff ran");
             }
 
             pplsPasswordDb.close();
